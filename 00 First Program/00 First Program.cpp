@@ -215,17 +215,31 @@
 ////}
 
 //----using if statements
+//#include<iostream>
+//using std::cout;
+//
+//int main() {
+//	int a{ 3 };
+//
+//	if (a > 4) {
+//		cout << "The number is greater than 4!" << "\n";
+//	}
+//	else{
+//		cout << "The number is less than 4!"<<"\n";
+//	}
+//	return 0;
+//}
+
+//----using while loops
 #include<iostream>
 using std::cout;
 
 int main() {
-	int a{ 3 };
+	int a = 0;
 
-	if (a > 4) {
-		cout << "The number is greater than 4!" << "\n";
-	}
-	else{
-		cout << "The number is less than 4!"<<"\n";
+	while (a < 5) {
+		cout << a << "\n";
+		++a;
 	}
 	return 0;
 }

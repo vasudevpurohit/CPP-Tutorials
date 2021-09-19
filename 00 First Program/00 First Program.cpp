@@ -231,15 +231,35 @@
 //}
 
 //----using while loops
-#include<iostream>
-using std::cout;
+//#include<iostream>
+//using std::cout;
+//
+//int main() {
+//	int a = 0;
+//
+//	while (a < 5) {
+//		cout << a << "\n";
+//		a++;
+//	}
+//	return 0;
+//}
 
-int main() {
-	int a = 0;
+//----program to find the even numbers from 1-10
+//#include<iostream>
+//using std::cout;
+//
+//int main() {
+//	int a = 1;
+//
+//	while (a < 11) {
+//		if (a % 2 == 0) {
+//			cout << a << " is an even number!"<<"\n";
+//		}
+//		else {
+//			cout << a << " is an odd number!"<<"\n";
+//		}
+//		a++;
+//	}
+//	return 0;
+//}
 
-	while (a < 5) {
-		cout << a << "\n";
-		++a;
-	}
-	return 0;
-}

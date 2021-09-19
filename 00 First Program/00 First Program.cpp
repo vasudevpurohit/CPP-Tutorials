@@ -190,26 +190,42 @@
 //	return 0;
 //}
 
-//----creating a printboard function that prints a 2D vector
+//////----creating a printboard function that prints a 2D vector
+////#include<iostream>
+////#include<vector>
+////using std::vector;
+////using std::cout;
+////
+////void printBoard(vector<vector<int>> i) {
+////	for (vector<int> j : i) {
+////		for (int k : j) {
+////			cout << k << " ";
+////		}
+////		cout << "\n";
+////	}
+////}
+////
+////int main() {
+////	//enter the elements to the 2D vector
+////	vector<vector<int>> a{ {0,1,0,0,0,0},{0,1,0,0,0,0},{0,1,0,0,0,0},{0,1,0,0,0,0},{0,0,0,0,1,0} };
+////
+////	//print the 2D elements
+////	printBoard(a);
+////	return 0;
+////}
+
+//----using if statements
 #include<iostream>
-#include<vector>
-using std::vector;
 using std::cout;
 
-void printBoard(vector<vector<int>> i) {
-	for (vector<int> j : i) {
-		for (int k : j) {
-			cout << k << " ";
-		}
-		cout << "\n";
-	}
-}
-
 int main() {
-	//enter the elements to the 2D vector
-	vector<vector<int>> a{ {0,1,0,0,0,0},{0,1,0,0,0,0},{0,1,0,0,0,0},{0,1,0,0,0,0},{0,0,0,0,1,0} };
+	int a{ 3 };
 
-	//print the 2D elements
-	printBoard(a);
+	if (a > 4) {
+		cout << "The number is greater than 4!" << "\n";
+	}
+	else{
+		cout << "The number is less than 4!"<<"\n";
+	}
 	return 0;
 }

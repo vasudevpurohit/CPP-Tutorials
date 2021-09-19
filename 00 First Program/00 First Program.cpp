@@ -43,28 +43,173 @@
 
 //----printing the values of a 1D and 2D vector
 
+//#include<iostream>
+//#include<vector>
+//
+//using std::cout;
+//using std::vector;
+//
+//int main() {
+//	vector<int> v1{ 1,2,3,4 };
+//	vector<vector<int>> v2{ {5,6},{7,8},{9,10} };
+//
+//	//for loop to iterate over the 1D vector
+//	for (int i : v1) {
+//		cout << i << " ";
+//	}
+//	cout << "\n";
+//
+//	//for loop to iterate over the 2D vector
+//	for (vector<int> j : v2) {
+//		for (int k : j) {
+//			cout << k << " ";
+//		}
+//		cout << "\n";
+//	}
+//	return 0;
+//}
+
+//----printing the lengths of a 2D-vector
+
+//#include<iostream>
+//#include<vector>
+//
+//using std::cout;
+//using std::vector;
+//
+//int main() {
+//	//storing integers in a vector
+//	vector<vector<int>> a{ {1,2},{3,4},{5,6} };
+//
+//	for (vector<int> i : a) {
+//		cout << i.size() << "\n";
+//	}
+//
+//return 0;
+//}
+
+//for loops
+
+//#include<iostream>
+//
+//using std::cout;
+//
+//int main() {
+//	for (int i = 0; i < 6; i++) {
+//		cout << i << "\n";
+//	}
+//	return 0;
+//}
+
+//----creating a function that adds two integers and using it to calculate the sum of 2 integers
+
+//#include<iostream>
+//using std::cout;
+//
+//int sumFunction(int i, int j) {
+//	return i + j;
+//}
+//
+//int main() {
+//	int a{ 1 };
+//	int b{ 2 };
+//
+//	cout << "The sum of the two integers " << a << " & " << b << " is " << sumFunction(a, b)<<"\n";
+//	return 0;
+//}
+
+//----a program that takes inputs from the user and spits out the sum of the two numbers
+
+//#include<iostream>
+//using std::cout;
+//using std::cin;
+//
+//int sumFunction(int i, int j) {
+//	return i + j;
+//}
+//
+//int main() {
+//	int a;
+//	int b;
+//	cout << "Please enter the first integer: ";
+//	cin >> a;
+//	cout << "\n" << "Please enter the second integer: ";
+//	cin >> b;
+//
+//	cout << "The sum of " << a << " & " << b << " is " << sumFunction(a, b)<<"\n";
+//	return 0;
+//}
+
+//----input a 1D vector and find the sum of all its elements
+
+//#include<iostream>
+//#include<vector>
+//using std::cout;
+//using std::vector;
+//
+//int sumFunction(int i, int j) {
+//	return i + j;
+//}
+//
+//int main() {
+//	//storing the values in a vector
+//	vector<int> a{ 1,2,3,4 };
+//
+//	int k = 0;
+//	//finding the sum of elements of the vector
+//	for (int i : a) {
+//		k = sumFunction(k, i);
+//	}
+//	cout << "The sum of all elements of the 1D vector is: " << k << "\n";
+//	return 0;
+//}
+
+//input elements in a 2D vector and find the sum of all its elements
+//#include<iostream>
+//#include<vector>
+//using std::cout;
+//using std::vector;
+//
+//int sumFunction(int i, int j) {
+//	return i + j;
+//}
+//
+//int main() {
+//	//entering the elements to a vector
+//	vector<vector<int>> a{ {1,2},{3,4},{5,6} };
+//
+//	//finding the sum of all elements of this 2D vector
+//	int k = 0;
+//
+//	for (vector<int> i : a) {
+//		for (int j : i) {
+//			k = sumFunction(j, k);
+//		}
+//	}
+//	cout << "The sum of all elements of the 2D vector is: " << k<<"\n";
+//	return 0;
+//}
+
+//----creating a printboard function that prints a 2D vector
 #include<iostream>
 #include<vector>
-
-using std::cout;
 using std::vector;
+using std::cout;
 
-int main() {
-	vector<int> v1{ 1,2,3,4 };
-	vector<vector<int>> v2{ {5,6},{7,8},{9,10} };
-
-	//for loop to iterate over the 1D vector
-	for (int i : v1) {
-		cout << i << " ";
-	}
-	cout << "\n";
-
-	//for loop to iterate over the 2D vector
-	for (vector<int> j : v2) {
+void printBoard(vector<vector<int>> i) {
+	for (vector<int> j : i) {
 		for (int k : j) {
 			cout << k << " ";
 		}
 		cout << "\n";
 	}
+}
+
+int main() {
+	//enter the elements to the 2D vector
+	vector<vector<int>> a{ {0,1,0,0,0,0},{0,1,0,0,0,0},{0,1,0,0,0,0},{0,1,0,0,0,0},{0,0,0,0,1,0} };
+
+	//print the 2D elements
+	printBoard(a);
 	return 0;
 }

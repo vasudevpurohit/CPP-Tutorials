@@ -345,30 +345,30 @@
 //}
 
 //----streaming strings with mixed types
-#include<iostream>
-#include<sstream>
-#include<string>
-
-using std::cout;
-using std::string;
-using std::istringstream;
-
-int main() {
-	string a{ "1,2,3" };
-
-	istringstream mystring(a);
-
-	int b;
-	char c;
-
-	while (mystring) {
-		mystring >> b >> c;
-		if (mystring) {
-			cout << "The stream was successful!\n";
-		}
-		else {
-			cout << "The stream was terminated!\n";
-		}
-	}
-return 0;
-}
+//#include<iostream>
+//#include<sstream>
+//#include<string>
+//
+//using std::cout;
+//using std::string;
+//using std::istringstream;
+//
+//int main() {
+//	string a{ "1,2,3" };
+//
+//	istringstream mystring(a);
+//
+//	int b;
+//	char c;
+//
+//	while (mystring) {
+//		mystring >> b >> c;
+//		if (mystring) {
+//			cout << "The stream was successful!\n";
+//		}
+//		else {
+//			cout << "The stream was terminated!\n";
+//		}
+//	}
+//return 0;
+//}

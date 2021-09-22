@@ -263,3 +263,112 @@
 //	return 0;
 //}
 
+//----creating an input file stream and reading the data present in the file
+//#include<iostream>
+//#include<fstream>
+//#include<string>
+//
+//using std::cout;
+//using std::string;
+//using std::ifstream;
+//using std::ofstream;
+//using std::cout;
+//
+//int main() {
+//	//create the file and write data to it
+//	ofstream random;
+//	random.open("Random.txt");
+//	random << "My name is Vasudev Purohit!" << "\n";
+//
+//	//now read the data from an existing file
+//
+//	ifstream myfile;
+//	myfile.open("Random.txt");
+//
+//	if (myfile) {
+//		cout << "The file has successfully opened!"<<"\n";
+//		string line;
+//		while (getline(myfile, line)) {
+//			cout << line << "\n";
+//		}
+//	}
+//return 0;
+//}
+
+//----streaming strings to integers
+//#include<iostream>
+//#include<sstream>
+//#include<vector>
+//
+//using std::cout;
+//using std::string;
+//using std::istringstream;
+//
+//int main() {
+//	string a{"1 2 3"};
+//
+//	//stream this in a variable of type int
+//
+//	istringstream mystring(a);
+//
+//	int b;
+//	mystring >> b;
+//	cout <<b<<"\n";
+//return 0;
+//}
+
+//----checking if there is anymore of the string to stream
+//#include<iostream>
+//#include<string>
+//#include<sstream>
+//
+//using std::cout;
+//using std::string;
+//using std::istringstream;
+//
+//int main() {
+//	string a{ "1 2 3" };
+//
+//	istringstream mystring(a);
+//	int n;
+//
+//	while (mystring) {
+//		mystring >> n;
+//		if (mystring) {
+//			cout << "The streaming was successful!" << "\n";
+//		}
+//		else{
+//			cout << "The streaming was terminated!";
+//		}
+//	}
+//return 0;
+//}
+
+//----streaming strings with mixed types
+#include<iostream>
+#include<sstream>
+#include<string>
+
+using std::cout;
+using std::string;
+using std::istringstream;
+
+int main() {
+	string a{ "1,2,3" };
+
+	istringstream mystring(a);
+
+	int b;
+	char c;
+
+	while (mystring) {
+		mystring >> b >> c;
+		if (mystring) {
+			cout << "The stream was successful!\n";
+		}
+		else {
+			cout << "The stream was terminated!\n";
+		}
+	}
+return 0;
+}
